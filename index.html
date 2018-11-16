@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />
+    <title>InfoGraphic: City Of Ottawa</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/full-width-pics.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black">
+      <div class="container">
+        <a class="navbar-brand" href="#">City of Ottawa: InfoGraphic Project</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="https://shubhamsharan.github.io/PersonalWebsite/">Creater's Information
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Bibliography/bib.html">Bibliography</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header - set the background image for the header in the line below -->
+    <header class="py-5 bg-image-full parallax" >
+      <img class="img-fluid d-block mx-auto" src="images/Banner1.png" alt="">
+    </header>
+
+    <!-- Content section -->
+    <div id="section1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px">
+      <center><h1>Budget Allocation</h1>
+          <note><p>Click on graphs to enlarge them.</p></note>
+
+      </center>
+    </br><hr>
+
+        <h4 style="font-size:14"> 2018 Traffic Budget Allocation</h4></br>
+        <div class="row">
+
+            <div class="col" >
+                <div class="flip-card" style="align:center;">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/budget.png" alt="Avatar" style="width:300px;height:225px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Expenditure</h2>
+                        <strong>$ 48.3 Million</strong>
+                        <h2>Earnings</h2>
+                        <strong>$ -1.89 Million</strong>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+                <div class="flip-card" style="align:center">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front" style="padding: 50px;">
+                                <h3>How much money alloted is to be spent in 2018?</h3>
+                            </div>
+                        <div class="flip-card-back">
+                            <a href="images/adoptedGraph.jpeg">
+                                <img src="images/adoptedGraph.jpeg" alt="Avatar" style="width:300px;height:225px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="flip-card" style="align:center">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images/actual.png" alt="Avatar" style="width:300px;height:225px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>The year isn't over yet.</p>
+                            <h2>Expenditure</h2>
+                            <strong>$ ?? Million</strong>
+                            <h2>Earnings</h2>
+                            <strong>$ ?? Million</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="flip-card" style="align:center">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front" style="padding: 50px; " >
+                                <h3>How much did we spend in 2018?</h3>
+                            </div>
+                        <div class="flip-card-back" style="padding: 50px;">
+                            <h3>Still calculating since year isn't over.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </br><hr>
+
+
+        <h4 style="font-size:14"> 2017 Traffic Budget Allocation</h4></br>
+        <div class="row">
+            <div class="col" >
+                <div class="flip-card" style="align:center">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/budget.png" alt="Avatar" style="width:300px;height:225px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Expenditure</h2>
+                        <strong>$ 46.4 Million</strong>
+                        <h2>Earnings</h2>
+                        <strong>$ -1.9 Million</strong>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+                <div class="flip-card" style="align:center">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front" style="padding: 40px;">
+                                <h2>How much money is alloted to be spent in 2017?</h2>
+                            </div>
+                        <div class="flip-card-back">
+                            <a href="images/budgetGraph.jpeg">
+                                <img src="images/budgetGraph.jpeg" href="image/budgetGraph.jpeg"alt="Avatar" style="width:300px;height:225px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="flip-card" style="align:center">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images/actual.png" alt="Avatar" style="width:300px;height:225px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Expenditure</h2>
+                            <strong>$ 46.8 Million</strong>
+                            <h2>Earnings</h2>
+                            <strong>$ -2 Million</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="flip-card" style="align:center">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front" style="padding: 50px;">
+                                <h3>How much did we spend in 2017?</h3>
+                            </div>
+                        <div class="flip-card-back">
+                            <a href="image/budgetGraph.jpeg">
+                                <img src="images/actualGraph.jpeg" alt="Avatar" style="width:300px;height:225px;">
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+    <div id="section2" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px"><center>
+      <h1>Busiest roads of Ottawa</h1>
+      <p> Some of the busiest roads should be the ones that needs to be best maintained, to ensure the pedistrian safety while in a motorized vehicle or not.</p></center>
+    </br>
+    <div>
+        <center><button class="button" id="myBtn">Instructions</button></center>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <strong>Instructions</strong>
+             <ul>
+               <li>Blue: Pedistrians and Cyclists</li>
+               <li>White: Motorized Vehicles</li>
+               <li>Use the tools on the chart to make the data easier to read. At this state it provides the top 20 busiest roads, but by modifying parameters you can see much more.</li>
+             </ul> </p>
+             <p><strong>NOTE:</strong> <i>The intersection names are too long creating clutter and have been replaced by numbers but if you hover over them you can see which intersection the data is about. As well as, the numbers represent the top 20 where is one is the busiest of the all. To view all data go to bibliography.</i>
+          </div>
+        </div>
+        <script>
+        var modal = document.getElementById('myModal');
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {modal.style.display = "block";}
+        span.onclick = function() {modal.style.display = "none";}
+        window.onclick = function(event) {if (event.target == modal) {modal.style.display = "none";}}
+        </script>
+    </div>
+
+      <div id="dataset1"><!-- Plotly chart will be drawn inside this DIV --></div>
+      <script src="Javascript/Dataset1.js"></script>
+      <script>
+      function getData1(){
+
+         // import * as data from 'Javascript/Dataset1.js';
+         let data = datasetModule;
+         console.log(data);
+         return data
+      }
+
+      var records = 100;
+      var data1 = getData1();
+
+      function CustomizeData(myData, records){
+          //for (i in data){console.log(data[i]);}
+          var dataObj1 = {
+              x:[],
+              y:[],
+              text:[],
+              type:'bar',
+              marker:{color: 'white'}
+          };
+
+          var dataObj2 = {
+              x:[],
+              y:[],
+              text:[],
+              type:'bar',
+              marker:{color: "#008CBA"}
+          }
+
+
+
+          layout= {
+              barmode: 'stack',
+              title: 'Top 20 Busiest Roads in Ottawa',
+              titlefont: {
+                size: 26,
+                color: 'black'
+              },
+              xaxis: { title: 'Intersections of Ottawa',
+                  range: [0.4, 20.6],  // to set the xaxis range to 0 to 1
+                  titlefont: {
+                    size: 16,
+                    color: 'black'
+                  },
+                  tickfont: {
+                  size: 14,
+                  color: 'black'
+                }},
+              yaxis: {
+                title: 'Number of Cars',
+                titlefont: {
+                  size: 16,
+                  color: 'black'
+                },
+                tickfont: {
+                  size: 14,
+                  color: 'black'
+                }
+              },
+              plot_bgcolor:"f6c244",
+              paper_bgcolor:"f6c244",
+              showlegend:false,
+          }
+          for(let i=0; i< records; i++){
+              dataObj1.text.push(" motorized vehicles at "+myData[i].Intersection);
+              dataObj2.text.push("were bikes and pedistrians.");
+              dataObj1.x.push(i+1);
+              dataObj2.x.push(i+1);
+              dataObj2.y.push(parseInt(myData[i].PedestriansNotFactored + myData[i].BicyclesNotFactored));
+              console.log(parseInt(myData[i].PedistrianNotFactored));
+              dataObj1.y.push(parseInt(myData[i].AllMotorizedVehiclesAADT));
+          }
+          var data = [];
+          data[0] = dataObj2;
+          data[1] = dataObj1;
+          Plotly.newPlot('dataset1',data,layout);
+          console.log(data);
+      }
+
+      CustomizeData(data1,records);
+      </script>
+    </div>
+
+    <div id="section41" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
+      <h1 style="color:white">Collision Data</h1>
+      <p style="color:white">How often do, collisions take place on the busiest regions and which other regions are more prone. The map shows the top 20 intersections where most accidents have happened.</p>
+      <div id="dataset2"><!-- Plotly chart will be drawn inside this DIV --></div>
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <div id='map' style='width: 100%; height: 300px;'></div>
+      <script src="Javascript/dataset2.js"></script>
+      <script>
+          mapboxgl.accessToken = 'pk.eyJ1Ijoic2h1YmhhbXNoYXJhbiIsImEiOiJjam8wNXZkdzYydTFlM3Jtb3Y4YnR2Y21yIn0.a5q8Yt1UJd_QuRmeCD50xw';
+
+          var map = new mapboxgl.Map({
+              container: 'map',
+              style: 'mapbox://styles/mapbox/streets-v9',
+              center: [-75.72411,45.3348],
+              zoom: 10
+          });
+
+          map.on('load', function() {
+
+              // Add a layer showing the places.
+              map.addLayer(datasetModule2);
+
+              // Create a popup, but don't add it to the map yet.
+              var popup = new mapboxgl.Popup({
+                  closeButton: false,
+                  closeOnClick: false
+              });
+
+              map.on('mouseenter', 'places', function(e) {
+                  // Change the cursor style as a UI indicator.
+                  map.getCanvas().style.cursor = 'pointer';
+
+                  var coordinates = e.features[0].geometry.coordinates.slice();
+                  var description = e.features[0].properties.description;
+
+                  // Ensure that if the map is zoomed out such that multiple
+                  // copies of the feature are visible, the popup appears
+                  // over the copy being pointed to.
+                  while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                      coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                  }
+
+                  // Populate the popup and set its coordinates
+                  // based on the feature found.
+                  popup.setLngLat(coordinates)
+                      .setHTML(description)
+                      .addTo(map);
+              });
+
+              map.on('mouseleave', 'places', function() {
+                  map.getCanvas().style.cursor = '';
+                  popup.remove();
+              });
+          });
+          </script>
+
+    </div>
+    <!-- Footer -->
+    <footer class="py-5" style="background:black">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; shubhamsharan 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

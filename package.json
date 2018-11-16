@@ -1,0 +1,45 @@
+{
+    "title": "Full Width Pics",
+    "name": "startbootstrap-full-width-pics",
+    "version": "4.1.1",
+    "description": "A HTML template featuring sections with full width image backgrounds built with Bootstrap",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://startbootstrap.com/template-overviews/full-width-pics",
+    "bugs": {
+        "url": "https://github.com/BlackrockDigital/startbootstrap-full-width-pics/issues",
+        "email": "feedback@startbootstrap.com"
+    },
+    "license": "MIT",
+    "author": "Start Bootstrap",
+    "contributors": [
+        "David Miller (http://davidmiller.io/)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BlackrockDigital/startbootstrap-full-width-pics.git"
+    },
+    "dependencies": {
+        "bootstrap": "4.1.1",
+        "convert-csv-to-json": "0.0.13",
+        "csvtojson": "^2.0.8",
+        "fast-csv": "^2.4.1",
+        "jquery": "3.3.1",
+        "papaparse": "^4.6.1",
+        "plotly": "^1.0.6",
+        "plotly.js": "^1.41.3",
+        "plotly.js-dist": "^1.41.3",
+        "require": "^2.4.20",
+        "xmlhttprequest": "^1.8.0"
+    },
+    "devDependencies": {
+        "browser-sync": "2.24.5",
+        "gulp": "^3.9.1"
+    }
+}
