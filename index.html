@@ -13,8 +13,6 @@
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />
     <title>InfoGraphic: City Of Ottawa</title>
     <link rel="shortcut icon" href="images/favicon.png">
-
-
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -55,8 +53,7 @@
     <!-- Content section -->
     <div id="section1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px">
       <center><h1>Budget Allocation</h1>
-          <note><p>Click on graphs to enlarge them.</p></note>
-
+          <note><p>Click on graphs to enlarge them. To view or download data, please visit the Bibliography page.</p></note>
       </center>
     </br><hr>
 
@@ -80,17 +77,10 @@
             </div>
 
             <div class="col">
-                <div class="flip-card" style="align:center">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front" style="padding: 50px;">
-                                <h3>How much money alloted is to be spent in 2018?</h3>
-                            </div>
-                        <div class="flip-card-back">
-                            <a href="images/adoptedGraph.jpeg">
-                                <img src="images/adoptedGraph.jpeg" alt="Avatar" style="width:300px;height:225px;">
-                            </a>
-                        </div>
-                    </div>
+                <div class="flip-card zoom" style="align:center">
+                    <a href="images/adoptedGraph.jpeg">
+                        <img src="images/adoptedGraph.jpeg" alt="Avatar" style="width:300px;height:225px;">
+                    </a>
                 </div>
             </div>
 
@@ -147,17 +137,10 @@
             </div>
 
             <div class="col">
-                <div class="flip-card" style="align:center">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front" style="padding: 40px;">
-                                <h2>How much money is alloted to be spent in 2017?</h2>
-                            </div>
-                        <div class="flip-card-back">
-                            <a href="images/budgetGraph.jpeg">
-                                <img src="images/budgetGraph.jpeg" href="images/budgetGraph.jpeg"alt="Avatar" style="width:300px;height:225px;">
-                            </a>
-                        </div>
-                    </div>
+                <div class="flip-card zoom" style="align:center">
+                    <a href="images/budgetGraph.jpeg">
+                        <img src="images/budgetGraph.jpeg" href="image/budgetGraph.jpeg"alt="Avatar" style="width:300px;height:225px;">
+                    </a>
                 </div>
             </div>
 
@@ -177,18 +160,10 @@
                 </div>
             </div>
             <div class="col">
-                <div class="flip-card" style="align:center">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front" style="padding: 50px;">
-                                <h3>How much did we spend in 2017?</h3>
-                            </div>
-                        <div class="flip-card-back">
-                            <a href="images/actualGraph.jpeg">
-                                <img src="images/actualGraph.jpeg" alt="Avatar" style="width:300px;height:225px;">
-                            </a>
-
-                        </div>
-                    </div>
+                <div class="flip-card zoom" style="align:center">
+                    <a href="images/actualGraph.jpeg">
+                        <img src="images/actualGraph.jpeg" alt="Avatar" style="width:300px;height:225px;">
+                    </a>
                 </div>
             </div>
         </div>
@@ -297,14 +272,14 @@
               dataObj1.x.push(i+1);
               dataObj2.x.push(i+1);
               dataObj2.y.push(parseInt(myData[i].PedestriansNotFactored + myData[i].BicyclesNotFactored));
-              console.log(parseInt(myData[i].PedistrianNotFactored));
+              //console.log(parseInt(myData[i].PedistrianNotFactored));
               dataObj1.y.push(parseInt(myData[i].AllMotorizedVehiclesAADT));
           }
           var data = [];
           data[0] = dataObj2;
           data[1] = dataObj1;
           Plotly.newPlot('dataset1',data,layout);
-          console.log(data);
+          //console.log(data);
       }
 
       CustomizeData(data1,records);
@@ -313,7 +288,7 @@
 
     <div id="section41" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
       <center><h1 style="color:white">Collision Data</h1>
-      <p style="color:white">How often do, collisions take place on the busiest regions and which other regions are more prone. The map shows the top 20 intersections where most accidents have happened.</p></center>
+      <p style="color:white">How often do, collisions take place on the busiest regions and which other regions are more prone. The map shows the top 20 intersections where most accidents have happened.</p></center><hr>
       <div id="dataset2"><!-- Plotly chart will be drawn inside this DIV --></div>
       <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
       <div id='map' style='width: 100%; height: 300px;'></div>
@@ -366,9 +341,9 @@
               });
           });
           </script>
-        <center><p><i>To get access to all the data please visit the Bibliography page. The data can viewed on the website or downloaded in excel format.</i></p><center>
-
-
+          <p><i><center>
+              To view all collision data, visit Bibliography from where you can download in excel format or view in the Open Data Portal.
+          </center></i></p>
     </div>
     <!-- Footer -->
     <footer class="py-5" style="background:black">
